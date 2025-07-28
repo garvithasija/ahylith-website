@@ -1,20 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahylith Website</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahylith – Foundational AI for the Next Generation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0a0a0a;
+      color: #ffffff;
+    }
+    header, footer {
+      background-color: #111;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    nav a {
+      color: #00ffe0;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .hero {
+      padding: 6rem 2rem;
+      text-align: center;
+      background: radial-gradient(circle, #1a1a1a, #000);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+      color: #ccc;
+    }
+    .btn {
+      padding: 0.75rem 1.5rem;
+      margin: 0.5rem;
+      border: none;
+      background-color: #00ffe0;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 0.5rem;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 960px;
+      margin: auto;
+    }
+    h2 {
+      color: #00ffe0;
+    }
+    .footer-links a {
+      color: #888;
+      margin: 0 0.5rem;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Ahylith</h1>
-    </header>
-    <main>
-        <p>This is the homepage for the Ahylith website.</p>
-    </main>
-    <footer>
-        <p>&copy; 2025 Ahylith. All rights reserved.</p>
-    </footer>
+  <header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#technology">Technology</a>
+      <a href="#use-cases">Use Cases</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Foundational AI for the Next Generation</h1>
+    <p>At Ahylith, we build adaptable, trusted AI systems for tomorrow’s challenges.</p>
+    <button class="btn">Explore Our Work</button>
+    <button class="btn">Contact Us</button>
+  </div>
+
+  <section id="about">
+    <h2>About Ahylith</h2>
+    <p>Ahylith is a modern AI company named from a blend of inspiration: “Ahilya,” the founder’s daughter, and “lith” — a symbol of strength and foundation. We are driven to create resilient, intelligent systems that empower industries and elevate innovation.</p>
+  </section>
+
+  <section id="technology">
+    <h2>Our Technology</h2>
+    <p>We develop core AI products in real estate, finance, and productivity. Our platforms are designed to be modular, interpretable, and secure by default — built on scalable, ethical AI principles.</p>
+  </section>
+
+  <section id="use-cases">
+    <h2>Use Cases</h2>
+    <ul>
+      <li><strong>Real Estate:</strong> Automated valuation models, smart agent assistants</li>
+      <li><strong>Finance:</strong> AI-powered investment analysis, fraud detection</li>
+      <li><strong>Enterprise Productivity:</strong> AI agents for workflows and decision-making</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Name" required /><br /><br />
+      <input type="email" placeholder="Email" required /><br /><br />
+      <textarea placeholder="Message" rows="5"></textarea><br /><br />
+      <button class="btn" type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#technology">Technology</a>
+      <a href="#contact">Contact</a>
+      <a href="#">Privacy</a>
+    </div>
+    <p>© 2025 Ahylith LLC. All rights reserved.</p>
+  </footer>
 </body>
 </html>
