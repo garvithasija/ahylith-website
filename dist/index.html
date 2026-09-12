@@ -11,7 +11,7 @@
 <header>
   <a class="brand" href="#" aria-label="Ahylith home"><img class="brand-mark" src="ahylith-structural-mark.svg" alt="" width="44" height="44">ahylith<span class="brand-dot">.</span></a>
   <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu <span>☰</span></button>
-  <nav id="navigation" aria-label="Main navigation"><a href="#workflow">How it works</a><a href="#intelligence">Bid intelligence</a><a href="#pilot">The pilot</a><a class="nav-contact" href="#contact">Join the pilot <span>↗</span></a></nav>
+  <nav id="navigation" aria-label="Main navigation"><a href="#workflow">How it works</a><a href="#intelligence">Bid intelligence</a><a href="#pilot">The pilot</a><a class="nav-contact" href="#contact" data-open-pilot>Join the pilot <span>↗</span></a></nav>
 </header>
 <main>
 <section class="hero pilot-hero" aria-labelledby="hero-title">
@@ -20,7 +20,7 @@
     <h1 id="hero-title">See beyond<br>the <em>lowest bid.</em></h1>
     <p class="intro">Compare subcontractor bids. Surface scope gaps.<br>Know what needs review before you award.</p>
     <p class="pilot-intro">We’re looking for general contractor companies to pilot Ahylith with their estimating and preconstruction teams.</p>
-    <a class="button" href="#contact">Become a pilot partner <span>↗</span></a>
+    <a class="button" href="#contact" data-open-pilot>Become a pilot partner <span>↗</span></a>
     <a class="secondary-link" href="#workflow">See the workflow ↓</a>
   </div>
   <div class="product-preview">
@@ -49,10 +49,39 @@
   <p class="eyebrow">LET’S TALK ABOUT YOUR NEXT BID REVIEW</p>
   <h2>Your projects.<br><em>Your feedback. Our pilot.</em></h2>
   <p>Tell us about your company and how your team reviews subcontractor bids.</p>
-  <div class="pilot-form"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdRWTwFGCAbg_1ZP5uD4po6Vl0k3vI4Hr8dcsV1jqiNgl26Rg/viewform?embedded=true" title="Ahylith pilot inquiry form" width="100%" height="1400" loading="lazy">Loading pilot inquiry form…</iframe></div>
-  <p class="email-note">Having trouble with the form? <a href="https://docs.google.com/forms/d/e/1FAIpQLSdRWTwFGCAbg_1ZP5uD4po6Vl0k3vI4Hr8dcsV1jqiNgl26Rg/viewform" target="_blank" rel="noopener">Open it in a new tab</a> or <a href="mailto:ahylith@gmail.com">email us</a>.</p>
+  <button class="button" type="button" data-open-pilot>Start your pilot inquiry <span>↗</span></button>
+  <p class="email-note">Prefer another route? <a href="https://docs.google.com/forms/d/e/1FAIpQLSdRWTwFGCAbg_1ZP5uD4po6Vl0k3vI4Hr8dcsV1jqiNgl26Rg/viewform" target="_blank" rel="noopener">Open the form in a new tab</a> or <a href="mailto:ahylith@gmail.com">email us</a>.</p>
 </section>
 </main>
-<footer><a class="brand" href="#"><img class="brand-mark" src="ahylith-structural-mark.svg" alt="" width="44" height="44">ahylith.</a><p>© 2026 Ahylith. All rights reserved.</p><a href="#pilot">Bid Intelligence Pilot</a><a href="#" class="back-top">Back to top ↑</a></footer>
+<footer><a class="brand" href="#"><img class="brand-mark" src="ahylith-structural-mark.svg" alt="" width="44" height="44">ahylith.</a><p>© 2026 Ahylith LLC. All rights reserved.</p><a href="#pilot">Bid Intelligence Pilot</a><a href="#" class="back-top">Back to top ↑</a></footer>
+<dialog class="pilot-dialog" id="pilot-dialog" aria-labelledby="pilot-dialog-title">
+  <div class="dialog-body">
+    <button type="button" class="dialog-close" data-close aria-label="Close">×</button>
+    <div class="dialog-form">
+      <p class="eyebrow">PILOT INQUIRY</p>
+      <h2 id="pilot-dialog-title">Tell us about <em>your team.</em></h2>
+      <p class="dialog-lead">Share a few details and we’ll contact you about the Bid Intelligence pilot.</p>
+      <form id="pilot-inquiry" novalidate>
+        <div class="field-grid">
+          <div class="field"><label for="pi-name">Full name</label><input id="pi-name" name="entry.403936924" required autocomplete="name"><small class="field-error">Please enter your name.</small></div>
+          <div class="field"><label for="pi-company">Company name</label><input id="pi-company" name="entry.270875733" required autocomplete="organization"><small class="field-error">Please enter your company.</small></div>
+          <div class="field"><label for="pi-email">Work email</label><input id="pi-email" type="email" name="entry.1719616083" required autocomplete="email" inputmode="email"><small class="field-error">Please enter a valid email address.</small></div>
+          <div class="field"><label for="pi-role">Role</label><input id="pi-role" name="entry.1567896604" required autocomplete="organization-title" placeholder="Estimator, precon lead…"><small class="field-error">Please enter your role.</small></div>
+          <div class="field field-wide"><label for="pi-phone">Phone number <span>optional</span></label><input id="pi-phone" type="tel" name="entry.1606734901" autocomplete="tel" inputmode="tel"></div>
+          <div class="field field-wide"><label for="pi-challenge">Biggest bid-review challenge <span>optional</span></label><textarea id="pi-challenge" name="entry.558998608" rows="4"></textarea></div>
+        </div>
+        <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <p class="form-error" role="alert" hidden></p>
+        <div class="form-actions"><button class="button" type="submit">Send inquiry <span>↗</span></button><span class="form-hint">Goes straight to the Ahylith team.</span></div>
+      </form>
+    </div>
+    <div class="dialog-success" hidden>
+      <span class="finding-icon">✓</span>
+      <h2>Thanks — we’ll be in touch.</h2>
+      <p>We’ve received your details and will contact you at the email address you provided.</p>
+      <button class="button" type="button" data-close>Done</button>
+    </div>
+  </div>
+</dialog>
 <script src="app.js"></script>
 </body></html>
